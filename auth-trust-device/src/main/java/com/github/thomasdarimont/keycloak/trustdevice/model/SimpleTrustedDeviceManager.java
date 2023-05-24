@@ -53,6 +53,9 @@ public class SimpleTrustedDeviceManager implements TrustedDeviceManager {
     }
 
     protected SimpleTrustedDeviceModel toModel(TrustedDeviceEntity entity) {
+        if (entity == null) {
+            return null;
+        }
         SimpleTrustedDeviceModel model = new SimpleTrustedDeviceModel();
         model.setRealmId(entity.getRealmId());
         model.setUserId(entity.getUserId());
