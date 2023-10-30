@@ -9,6 +9,22 @@
     <version>1.0.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <repositories>
+        <repository>
+            <id>codeartifact</id>
+            <name>codeartifact</name>
+            <url>https://alayacare-406883902139.d.codeartifact.us-east-1.amazonaws.com/maven/alaya-maven/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+         <repository>
+             <id>codeartifact</id>
+             <name>codeartifact</name>
+             <url>https://alayacare-406883902139.d.codeartifact.us-east-1.amazonaws.com/maven/alaya-maven/</url>
+         </repository>
+     </distributionManagement>
+
     <modules>
         <module>keycloak-playground-server</module>
         <module>simple-auth-extension</module>
