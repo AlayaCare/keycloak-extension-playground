@@ -11,6 +11,10 @@
 
     <artifactId>auth-trust-device</artifactId>
 
+    <properties>
+        <keycloak.version>21.1.2</keycloak.version>
+    </properties>
+
     <dependencies>
 
         <dependency>
