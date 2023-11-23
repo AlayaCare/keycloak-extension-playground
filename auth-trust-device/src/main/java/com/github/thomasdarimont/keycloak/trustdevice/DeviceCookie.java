@@ -1,6 +1,6 @@
 package com.github.thomasdarimont.keycloak.trustdevice;
 
-import org.jboss.resteasy.spi.HttpRequest;
+import org.keycloak.http.HttpRequest;
 import org.keycloak.common.ClientConnection;
 import org.keycloak.common.util.ServerCookie;
 import org.keycloak.models.KeycloakSession;
@@ -42,7 +42,8 @@ public class DeviceCookie {
                 maxAge,
                 secure,
                 true, // httponly
-                sameSiteValue
+                sameSiteValue,
+                session
         );
     }
 

@@ -6,7 +6,7 @@ import com.github.thomasdarimont.keycloak.trustdevice.model.SimpleTrustedDeviceM
 import com.github.thomasdarimont.keycloak.trustdevice.model.TrustedDeviceManager;
 import com.github.thomasdarimont.keycloak.trustdevice.support.UserAgentParser;
 import lombok.extern.jbosslog.JBossLog;
-import org.jboss.resteasy.spi.HttpRequest;
+import org.keycloak.http.HttpRequest;
 import org.keycloak.authentication.InitiatedActionSupport;
 import org.keycloak.authentication.RequiredActionContext;
 import org.keycloak.authentication.RequiredActionProvider;
